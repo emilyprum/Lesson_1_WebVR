@@ -20,4 +20,4 @@ app.get('/', function(req, res){
 
 // now start the server
 server.listen(LISTEN_PORT);
-console.log('Listeing to port' + LISTEN_PORT);
+console.log('Listening to port' + LISTEN_PORT);
