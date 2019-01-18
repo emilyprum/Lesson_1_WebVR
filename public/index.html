@@ -3,56 +3,18 @@
     <head>
         <title>WebVr Intro.</title>
         <script src = "/js/aframe-v0.8.2.min.js"></script>
-        <script src= "js/component.js"></script>
+        
     </head>
     <body>
         <a-scene>
             <a-assets>
-               <!-- <img id= "skymap" src = "/assets/textures/CloudySky.jpg">
-                <img id = "cowmap" src = "assets/textures/Cow.png">
-                <a-asset-item id= "Helmet-gltf" src = "assets/models/DamagedHelmet.glb"></a-asset-item>
-                <a-asset-item id = "Cow-obj" src ="assets/models/Cow.obj"></a-asset-item> -->
-                <a-asset-item id="model" src = "assets/models/hanzlaSux.obj"></a-asset-item>
-                <a-asset-item id="material" src = "assets/models/hanzlaSux.mtl"></a-asset-item>
-
+                <a-asset-item id= "model" src = "assets/models/tree.obj"></a-asset-item>
+                <img id = "texture" src="assets/textures/treeee.png">
             </a-assets>
-           <!-- <a-gltf-model   id = "Helmet"
-                            src = "#Helmet-gltf"
-                            position = " -2 0.6 -4"
-                            scale = "1 1 1 "
-                            shadow = "cast:true; recieve: true;">
-            </a-gltf-model> -->
-
-            <a-entity obj-model = "obj: #model; mtl: #material"></a-entity>
-            <a-entity test-component= "message: message is working; name: steve" ></a-entity>
-            
-
-            <a-entity position= "0 0 10">
-                <a-camera></a-camera>
-
-            </a-entity>
-
-            <a-light type = "point" color = "white" position= "15 5 0" ></a-light>
-            <a-light type = "point" color = "red" position= "15 5 0" ></a-light>
-
-           <!-- <a-entity id = "box"
-                    postion = " -1 0.5 -3"
-                    rotation = "0 45 0"
-                    scale = "1 1 1"
-                    geometry = "primitive: box; width:1; height:1; depth:1;"
-                    shadow = "cast: true; recieve: true;"
-                    material = "color: #EF2D5E; sphericalEnvMap:#skymap; roughness:0.5; metalness:0.0;">
-        </a-entity>
-          <a-box position= "-1 0.5 -3" rotation = "0 45 0" color = "#4cc3d9" shadow></a-box>
-            <a-sphere position= "0 1.25 -5" radius = "1.25" color = "#EF2D5E" shadow></a-sphere>
-            <a-cylinder position= "0 1.75 -3" radius = "0.5" color = "#FFC650" shadow></a-cylinder>
-            <a-plane position= "0 0 -4" rotation = "-90 0 0" color = "#7BCBA4" shadow></a-plane>
-            <a-sky color = "#ECECEC"></a-sky> -->
-
-           <!-- <a-entity   id="sky"
-                        geometry= "primitive: sphere; radius: 500"
-                        material = "shader: flat; src:#skymap; side:back">
-            </a-entity>-->
+     
+           <!-- <a-entity obj-model="obj : #model" material = "src: #texture" ></a-entity>-->
         </a-scene>
     </body>
+
+    <script src= "js/trees.js"></script>
 </html>
